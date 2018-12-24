@@ -3,9 +3,9 @@
 		<el-row>
 			<el-col :span="10">
 				<div>
-					© 2018 GitHub-Laziji&emsp;&emsp;
-					<a href="https://github.com/GitHub-Laziji" target="_blank">Profile</a>&emsp;&emsp;
-					<a href="https://github.com/GitHub-Laziji/vblog" target="_blank">VBlog</a>
+					© 2018 yang-1213&emsp;&emsp;
+					<!-- <a href="https://github.com/GitHub-Laziji" target="_blank">Profile</a>&emsp;&emsp; -->
+					<!-- <a href="https://github.com/GitHub-Laziji/vblog" target="_blank">VBlog</a> -->
 				</div>
 			</el-col>
 			<el-col :span="4">
@@ -17,7 +17,7 @@
 				<div style="float: right;">
 					<a href="https://developer.github.com" target="_blank">GitHub-API</a>&emsp;&emsp;
 					<a href="https://cn.vuejs.org/" target="_blank">Vue.js</a>&emsp;&emsp;
-					<a href="http://element.eleme.io/" target="_blank">Element</a>
+					<a href="http://element-cn.eleme.io/" target="_blank">Element</a>
 
 				</div>
 			</el-col>
@@ -25,14 +25,14 @@
 	</div>
 </template>
 <script>
-	export default {
-		data() {
-			return {
+export default {
+  data () {
+    return {
 
-			}
-		},
-		methods: {
+    }
+  },
+  methods: {
 
-		}
-	}
+  }
+}
 </script>

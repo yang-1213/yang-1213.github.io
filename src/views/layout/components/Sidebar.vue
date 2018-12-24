@@ -20,9 +20,9 @@
                 <el-button type="text" @click="cancellation">注销</el-button>
             </div>
             <div style="margin-top: 10px;text-align: left">
-                <el-alert title="Token获取" type="info" description="在 github-> settings-> developerSettings-> personalAccessTokens 勾选gist权限,获取Token. 详情参考README.md"
+                <!-- <el-alert title="" type="info"
                     :closable="false">
-                </el-alert>
+                </el-alert> -->
             </div>
         </el-card>
         <token-dialog ref="tokenDialog"></token-dialog>
@@ -30,44 +30,44 @@
 </template>
 
 <script>
-    import { mapGetters } from 'vuex'
-    import { constantRouterMap } from '@/router'
-    import TokenDialog from '@/views/common/TokenDialog'
-    export default {
-        components: {
-            TokenDialog
-        },
-        data() {
-            return {
-                constantRouterMap,
-                active: "",
-                parentUrl: "",
-                menuList: []
-            }
-        },
-        computed: {
-            ...mapGetters([
-                'token',
-                'githubUsername',
-                'mini'
-            ])
-        },
-        mounted() {
-            let arr = this.$route.path.split("/")
-            this.active = "/" + arr[1] + "/" + arr[2]
-        },
-        methods: {
-            onSelect(index) {
-                this.$router.push(index)
-            },
-            openTokenDialog() {
-                this.$refs.tokenDialog.open(() => {
-           
-                })
-            },
-            cancellation() {
-                this.$store.dispatch("Cancellation")
-            }
-        }
+import { mapGetters } from 'vuex'
+import { constantRouterMap } from '@/router'
+import TokenDialog from '@/views/common/TokenDialog'
+export default {
+  components: {
+    TokenDialog
+  },
+  data () {
+    return {
+      constantRouterMap,
+      active: '',
+      parentUrl: '',
+      menuList: []
     }
+  },
+  computed: {
+    ...mapGetters([
+      'token',
+      'githubUsername',
+      'mini'
+    ])
+  },
+  mounted () {
+    let arr = this.$route.path.split('/')
+    this.active = '/' + arr[1] + '/' + arr[2]
+  },
+  methods: {
+    onSelect (index) {
+      this.$router.push(index)
+    },
+    openTokenDialog () {
+      this.$refs.tokenDialog.open(() => {
+
+      })
+    },
+    cancellation () {
+      this.$store.dispatch('Cancellation')
+    }
+  }
+}
 </script>

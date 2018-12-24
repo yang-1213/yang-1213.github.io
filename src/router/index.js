@@ -15,7 +15,8 @@ import ProjectMain from '@/views/project/Main'
 import ProjectDetails from '@/views/project/Details'
 import ReadmeMain from '@/views/readme/Main'
 import ConfigureMain from '@/views/configure/Main'
-import HelperMain from '@/views/helper/Main'
+// 帮助页面
+// import HelperMain from '@/views/helper/Main'
 
 import MobileLayout from '@/mobile_views/layout/Layout'
 import MobileBlogMain from '@/mobile_views/blog/Main'
@@ -123,24 +124,24 @@ export const constantRouterMap = [
             }
         ]
     },
-    {
-        path: '/user/helper',
-        redirect: '/user/helper/main',
-        component: Layout,
-        meta: {
-            type: "user",
-            icon: 'el-icon-printer',
-            title: '使用帮助',
-            mini: true
-        },
-        children: [
-            {
-                path: 'main',
-                component: HelperMain,
-                meta: { title: '使用帮助' }
-            }
-        ]
-    },
+    // {
+    //     path: '/user/helper',
+    //     redirect: '/user/helper/main',
+    //     component: Layout,
+    //     meta: {
+    //         type: "user",
+    //         icon: 'el-icon-printer',
+    //         title: '使用帮助',
+    //         mini: true
+    //     },
+    //     children: [
+    //         {
+    //             path: 'main',
+    //             component: HelperMain,
+    //             meta: { title: '使用帮助' }
+    //         }
+    //     ]
+    // },
     {
         path: '/user/readme',
         redirect: '/user/readme/main',

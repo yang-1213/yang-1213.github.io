@@ -142,23 +142,23 @@ export const constantRouterMap = [
     //         }
     //     ]
     // },
-    {
-        path: '/user/readme',
-        redirect: '/user/readme/main',
-        component: Layout,
-        meta: {
-            type: "user",
-            icon: 'el-icon-document',
-            title: 'README.md'
-        },
-        children: [
-            {
-                path: 'main',
-                component: ReadmeMain,
-                meta: { title: 'README.md' }
-            }
-        ]
-    },
+    // {
+    //     path: '/user/readme',
+    //     redirect: '/user/readme/main',
+    //     component: Layout,
+    //     meta: {
+    //         type: "user",
+    //         icon: 'el-icon-document',
+    //         title: 'README.md'
+    //     },
+    //     children: [
+    //         {
+    //             path: 'main',
+    //             component: ReadmeMain,
+    //             meta: { title: 'README.md' }
+    //         }
+    //     ]
+    // },
     {
         path: '/user/configure',
         redirect: '/user/configure/main',
